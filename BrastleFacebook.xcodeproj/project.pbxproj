@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F1E2FEFF528E97F81BCFBC /* Pods_BrastleFacebook_BrastleFacebookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A39E9D9A09CC747526FD4C2 /* Pods_BrastleFacebook_BrastleFacebookUITests.framework */; };
+		6A9C01DEDF649EF6D8302748 /* Pods_BrastleFacebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */; };
+		8AFB8DBAF4426B71579D2193 /* Pods_BrastleFacebookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */; };
 		A0B679DC2666BEDA00965C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B679DB2666BEDA00965C17 /* AppDelegate.swift */; };
 		A0B679DE2666BEDA00965C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B679DD2666BEDA00965C17 /* SceneDelegate.swift */; };
 		A0B679E02666BEDA00965C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B679DF2666BEDA00965C17 /* ViewController.swift */; };
@@ -15,6 +18,15 @@
 		A0B679E82666BEDB00965C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B679E62666BEDB00965C17 /* LaunchScreen.storyboard */; };
 		A0B679F32666BEDB00965C17 /* BrastleFacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B679F22666BEDB00965C17 /* BrastleFacebookTests.swift */; };
 		A0B679FE2666BEDB00965C17 /* BrastleFacebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B679FD2666BEDB00965C17 /* BrastleFacebookUITests.swift */; };
+		A0B67A122666DE1900965C17 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0B2666DE1900965C17 /* HomePresenter.swift */; };
+		A0B67A132666DE1900965C17 /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0C2666DE1900965C17 /* HomeLocalDataManager.swift */; };
+		A0B67A142666DE1900965C17 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0D2666DE1900965C17 /* HomeProtocols.swift */; };
+		A0B67A152666DE1900965C17 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0E2666DE1900965C17 /* HomeInteractor.swift */; };
+		A0B67A162666DE1900965C17 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0F2666DE1900965C17 /* HomeView.swift */; };
+		A0B67A172666DE1900965C17 /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */; };
+		A0B67A182666DE1900965C17 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A112666DE1900965C17 /* HomeWireFrame.swift */; };
+		A0B67A1B2666E0D500965C17 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */; };
+		A0B67A2126677BB500965C17 /* Constanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A2026677BB500965C17 /* Constanst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BD0AA8931DFAC337E9108A8 /* Pods-BrastleFacebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook.release.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook.release.xcconfig"; sourceTree = "<group>"; };
+		29E67243BA8247E09FE03BC8 /* Pods-BrastleFacebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebookTests.release.xcconfig"; path = "Target Support Files/Pods-BrastleFacebookTests/Pods-BrastleFacebookTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A39E9D9A09CC747526FD4C2 /* Pods_BrastleFacebook_BrastleFacebookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebook_BrastleFacebookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F42FD3D6FA40BCBB2B4B9FD /* Pods-BrastleFacebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebookTests.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebookTests/Pods-BrastleFacebookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D82B1A90FC9DF714940E3FD /* Pods-BrastleFacebook-BrastleFacebookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook-BrastleFacebookUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook-BrastleFacebookUITests/Pods-BrastleFacebook-BrastleFacebookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		739BB610E3CABDDF03177897 /* Pods-BrastleFacebook-BrastleFacebookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook-BrastleFacebookUITests.release.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook-BrastleFacebookUITests/Pods-BrastleFacebook-BrastleFacebookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A0B679D82666BEDA00965C17 /* BrastleFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrastleFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B679DB2666BEDA00965C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B679DD2666BEDA00965C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,18 @@
 		A0B679F92666BEDB00965C17 /* BrastleFacebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastleFacebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B679FD2666BEDB00965C17 /* BrastleFacebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastleFacebookUITests.swift; sourceTree = "<group>"; };
 		A0B679FF2666BEDB00965C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B67A0B2666DE1900965C17 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A0B67A0C2666DE1900965C17 /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		A0B67A0D2666DE1900965C17 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		A0B67A0E2666DE1900965C17 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A0B67A0F2666DE1900965C17 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		A0B67A112666DE1900965C17 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A0B67A2026677BB500965C17 /* Constanst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constanst.swift; sourceTree = "<group>"; };
+		C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook.debug.xcconfig"; sourceTree = "<group>"; };
+		EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9C01DEDF649EF6D8302748 /* Pods_BrastleFacebook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFB8DBAF4426B71579D2193 /* Pods_BrastleFacebookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F1E2FEFF528E97F81BCFBC /* Pods_BrastleFacebook_BrastleFacebookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A0C9C9682B7BD3063B79C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */,
+				2A39E9D9A09CC747526FD4C2 /* Pods_BrastleFacebook_BrastleFacebookUITests.framework */,
+				FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FF888C3A1D32FD788CF850D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */,
+				1BD0AA8931DFAC337E9108A8 /* Pods-BrastleFacebook.release.xcconfig */,
+				5D82B1A90FC9DF714940E3FD /* Pods-BrastleFacebook-BrastleFacebookUITests.debug.xcconfig */,
+				739BB610E3CABDDF03177897 /* Pods-BrastleFacebook-BrastleFacebookUITests.release.xcconfig */,
+				3F42FD3D6FA40BCBB2B4B9FD /* Pods-BrastleFacebookTests.debug.xcconfig */,
+				29E67243BA8247E09FE03BC8 /* Pods-BrastleFacebookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A0B679CF2666BEDA00965C17 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				A0B679F12666BEDB00965C17 /* BrastleFacebookTests */,
 				A0B679FC2666BEDB00965C17 /* BrastleFacebookUITests */,
 				A0B679D92666BEDA00965C17 /* Products */,
+				9FF888C3A1D32FD788CF850D /* Pods */,
+				42A0C9C9682B7BD3063B79C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +157,7 @@
 		A0B679DA2666BEDA00965C17 /* BrastleFacebook */ = {
 			isa = PBXGroup;
 			children = (
+				A0B67A1F26677B9A00965C17 /* Utils */,
 				A0B679DB2666BEDA00965C17 /* AppDelegate.swift */,
 				A0B679DD2666BEDA00965C17 /* SceneDelegate.swift */,
 				A0B679DF2666BEDA00965C17 /* ViewController.swift */,
@@ -106,6 +165,7 @@
 				A0B679E42666BEDB00965C17 /* Assets.xcassets */,
 				A0B679E62666BEDB00965C17 /* LaunchScreen.storyboard */,
 				A0B679E92666BEDB00965C17 /* Info.plist */,
+				A0B67A192666DE2500965C17 /* Home */,
 			);
 			path = BrastleFacebook;
 			sourceTree = "<group>";
@@ -128,6 +188,29 @@
 			path = BrastleFacebookUITests;
 			sourceTree = "<group>";
 		};
+		A0B67A192666DE2500965C17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67A0B2666DE1900965C17 /* HomePresenter.swift */,
+				A0B67A0C2666DE1900965C17 /* HomeLocalDataManager.swift */,
+				A0B67A0D2666DE1900965C17 /* HomeProtocols.swift */,
+				A0B67A0E2666DE1900965C17 /* HomeInteractor.swift */,
+				A0B67A0F2666DE1900965C17 /* HomeView.swift */,
+				A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */,
+				A0B67A112666DE1900965C17 /* HomeWireFrame.swift */,
+				A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A0B67A1F26677B9A00965C17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67A2026677BB500965C17 /* Constanst.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0B67A022666BEDB00965C17 /* Build configuration list for PBXNativeTarget "BrastleFacebook" */;
 			buildPhases = (
+				BA710EE5E6CC1237F01118DB /* [CP] Check Pods Manifest.lock */,
 				A0B679D42666BEDA00965C17 /* Sources */,
 				A0B679D52666BEDA00965C17 /* Frameworks */,
 				A0B679D62666BEDA00965C17 /* Resources */,
+				6D837E2E59AEA91EEA52F52A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0B67A052666BEDB00965C17 /* Build configuration list for PBXNativeTarget "BrastleFacebookTests" */;
 			buildPhases = (
+				1F9EC689C90A4AC1440DD3F4 /* [CP] Check Pods Manifest.lock */,
 				A0B679EA2666BEDB00965C17 /* Sources */,
 				A0B679EB2666BEDB00965C17 /* Frameworks */,
 				A0B679EC2666BEDB00965C17 /* Resources */,
@@ -170,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0B67A082666BEDB00965C17 /* Build configuration list for PBXNativeTarget "BrastleFacebookUITests" */;
 			buildPhases = (
+				EBC5A890E943EE940880BA12 /* [CP] Check Pods Manifest.lock */,
 				A0B679F52666BEDB00965C17 /* Sources */,
 				A0B679F62666BEDB00965C17 /* Frameworks */,
 				A0B679F72666BEDB00965C17 /* Resources */,
+				2E37506F52063C8D9F60E522 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B679E82666BEDB00965C17 /* LaunchScreen.storyboard in Resources */,
+				A0B67A1B2666E0D500965C17 /* Storyboard.storyboard in Resources */,
 				A0B679E52666BEDB00965C17 /* Assets.xcassets in Resources */,
 				A0B679E32666BEDA00965C17 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +342,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F9EC689C90A4AC1440DD3F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrastleFacebookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E37506F52063C8D9F60E522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook-BrastleFacebookUITests/Pods-BrastleFacebook-BrastleFacebookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook-BrastleFacebookUITests/Pods-BrastleFacebook-BrastleFacebookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook-BrastleFacebookUITests/Pods-BrastleFacebook-BrastleFacebookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D837E2E59AEA91EEA52F52A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA710EE5E6CC1237F01118DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrastleFacebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC5A890E943EE940880BA12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrastleFacebook-BrastleFacebookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0B679D42666BEDA00965C17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +452,15 @@
 			files = (
 				A0B679E02666BEDA00965C17 /* ViewController.swift in Sources */,
 				A0B679DC2666BEDA00965C17 /* AppDelegate.swift in Sources */,
+				A0B67A132666DE1900965C17 /* HomeLocalDataManager.swift in Sources */,
 				A0B679DE2666BEDA00965C17 /* SceneDelegate.swift in Sources */,
+				A0B67A142666DE1900965C17 /* HomeProtocols.swift in Sources */,
+				A0B67A162666DE1900965C17 /* HomeView.swift in Sources */,
+				A0B67A2126677BB500965C17 /* Constanst.swift in Sources */,
+				A0B67A172666DE1900965C17 /* HomeRemoteDataManager.swift in Sources */,
+				A0B67A122666DE1900965C17 /* HomePresenter.swift in Sources */,
+				A0B67A152666DE1900965C17 /* HomeInteractor.swift in Sources */,
+				A0B67A182666DE1900965C17 /* HomeWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +633,7 @@
 		};
 		A0B67A032666BEDB00965C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +653,7 @@
 		};
 		A0B67A042666BEDB00965C17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD0AA8931DFAC337E9108A8 /* Pods-BrastleFacebook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +673,7 @@
 		};
 		A0B67A062666BEDB00965C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F42FD3D6FA40BCBB2B4B9FD /* Pods-BrastleFacebookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +696,7 @@
 		};
 		A0B67A072666BEDB00965C17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E67243BA8247E09FE03BC8 /* Pods-BrastleFacebookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +719,7 @@
 		};
 		A0B67A092666BEDB00965C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D82B1A90FC9DF714940E3FD /* Pods-BrastleFacebook-BrastleFacebookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +740,7 @@
 		};
 		A0B67A0A2666BEDB00965C17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739BB610E3CABDDF03177897 /* Pods-BrastleFacebook-BrastleFacebookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
