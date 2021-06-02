@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-449" y="113"/>
         </scene>
-        <!--Home View-->
+        <!--BrastleFacebook-->
         <scene sceneID="mZc-pn-uhK">
             <objects>
                 <viewController storyboardIdentifier="homeView" modalPresentationStyle="fullScreen" id="Z3g-m3-7Ln" customClass="HomeView" customModule="BrastleFacebook" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,9 +32,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-Mm-CdR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-Mm-CdR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gnomesCell" rowHeight="203" id="0la-Fh-jYZ" customClass="GnomesTableViewCell" customModule="BrastleFacebook" customModuleProvider="target">
@@ -45,42 +44,52 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw5-Pe-pPU">
-                                                    <rect key="frame" x="21" y="12" width="374" height="181"/>
+                                                    <rect key="frame" x="5" y="5" width="404" height="193"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-3z-cgd">
-                                                            <rect key="frame" x="8" y="8" width="358" height="165"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-3z-cgd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="193"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="165" id="9vx-gB-Pta"/>
-                                                                <constraint firstAttribute="width" constant="358" id="PxP-dK-Jb4"/>
+                                                                <constraint firstAttribute="height" constant="193" id="3fl-gZ-EHG"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-gW-JE9">
-                                                            <rect key="frame" x="8" y="132" width="358" height="41"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="35"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-gW-JE9">
+                                                            <rect key="frame" x="0.0" y="152" width="404" height="41"/>
+                                                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="41" id="ngG-93-y3w"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="34"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="top" secondItem="Vw5-Pe-pPU" secondAttribute="top" constant="8" id="St5-4h-6qe"/>
-                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="leading" secondItem="Vw5-Pe-pPU" secondAttribute="leading" constant="8" id="h5T-Ee-oR6"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rzv-3z-cgd" secondAttribute="trailing" constant="8" id="j63-B9-GxY"/>
-                                                        <constraint firstAttribute="bottom" secondItem="rzv-3z-cgd" secondAttribute="bottom" constant="8" id="pCV-GR-ORn"/>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="centerX" secondItem="Vw5-Pe-pPU" secondAttribute="centerX" id="Cqw-xx-HFK"/>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="leading" secondItem="lEk-gW-JE9" secondAttribute="leading" id="VcE-FM-L0z"/>
+                                                        <constraint firstItem="lEk-gW-JE9" firstAttribute="centerX" secondItem="rzv-3z-cgd" secondAttribute="centerX" id="elw-PY-zbN"/>
+                                                        <constraint firstAttribute="height" constant="193" id="gaM-hD-9gU"/>
+                                                        <constraint firstAttribute="width" constant="404" id="jfj-7k-TEh"/>
+                                                        <constraint firstItem="lEk-gW-JE9" firstAttribute="bottom" secondItem="rzv-3z-cgd" secondAttribute="bottom" id="mKU-Es-pp9"/>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="centerY" secondItem="Vw5-Pe-pPU" secondAttribute="centerY" id="mMk-fV-yb1"/>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="leading" secondItem="Vw5-Pe-pPU" secondAttribute="leading" id="msl-ms-ZZ8"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="trailing" secondItem="1Zp-Of-V2m" secondAttribute="trailingMargin" constant="1" id="3Sp-OP-oKa"/>
-                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="bottom" secondItem="1Zp-Of-V2m" secondAttribute="bottomMargin" constant="1" id="T4N-q3-9Aw"/>
-                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="top" secondItem="1Zp-Of-V2m" secondAttribute="topMargin" constant="1" id="jCL-ja-quV"/>
-                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="leading" secondItem="1Zp-Of-V2m" secondAttribute="leadingMargin" constant="1" id="tws-I2-sJH"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="centerY" secondItem="1Zp-Of-V2m" secondAttribute="centerY" id="36T-R7-NDL"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vw5-Pe-pPU" secondAttribute="bottom" constant="5" id="GdL-aE-Isk"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="leading" secondItem="1Zp-Of-V2m" secondAttribute="leading" constant="5" id="PPl-II-cnp"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="centerX" secondItem="1Zp-Of-V2m" secondAttribute="centerX" id="XlH-8d-TxQ"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="top" secondItem="1Zp-Of-V2m" secondAttribute="topMargin" constant="-6" id="ie2-Rg-e0H"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="top" secondItem="1Zp-Of-V2m" secondAttribute="top" constant="5" id="iny-4W-RWc"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vw5-Pe-pPU" secondAttribute="trailing" constant="5" id="raj-lw-eJI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgGnome" destination="rzv-3z-cgd" id="4J0-XP-6K5"/>
                                             <outlet property="lbNameGnome" destination="lEk-gW-JE9" id="e3v-W9-Zha"/>
+                                            <outlet property="viewBackground" destination="Vw5-Pe-pPU" id="jKw-Lt-Tle"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -91,9 +100,15 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhb-WT-5om"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="0qu-Mm-CdR" firstAttribute="leading" secondItem="uhb-WT-5om" secondAttribute="leading" id="67s-4B-7ea"/>
+                            <constraint firstItem="0qu-Mm-CdR" firstAttribute="bottom" secondItem="uhb-WT-5om" secondAttribute="bottom" constant="34" id="7Be-8C-8YZ"/>
+                            <constraint firstItem="0qu-Mm-CdR" firstAttribute="centerX" secondItem="WLF-sj-d9m" secondAttribute="centerX" id="miF-lE-lKV"/>
+                            <constraint firstItem="0qu-Mm-CdR" firstAttribute="top" secondItem="WLF-sj-d9m" secondAttribute="topMargin" constant="-44" id="urg-jI-DFK"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lEf-5w-dPF"/>
+                    <navigationItem key="navigationItem" title="BrastleFacebook" id="lEf-5w-dPF"/>
                     <connections>
                         <outlet property="gnomesTable" destination="0qu-Mm-CdR" id="Hbn-id-mvA"/>
                     </connections>
@@ -104,8 +119,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

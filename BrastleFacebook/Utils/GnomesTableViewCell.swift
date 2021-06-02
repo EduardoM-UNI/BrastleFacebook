@@ -10,8 +10,8 @@ import UIKit
 class GnomesTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var imgGnome: UIImageView!
-    
     @IBOutlet weak var lbNameGnome: UILabel!
     
     override func awakeFromNib() {
