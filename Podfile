@@ -10,7 +10,7 @@ target 'BrastleFacebook' do
   pod 'Alamofire', '~> 4.0'
 	pod 'RealmSwift'
 	pod 'SwiftyJSON', '~> 4.0'
-
+  pod 'SDWebImage'
 
   target 'BrastleFacebookTests' do
     inherit! :search_paths

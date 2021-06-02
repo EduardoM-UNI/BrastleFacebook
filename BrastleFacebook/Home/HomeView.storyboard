@@ -37,25 +37,70 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="0la-Fh-jYZ">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="77"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gnomesCell" rowHeight="203" id="0la-Fh-jYZ" customClass="GnomesTableViewCell" customModule="BrastleFacebook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0la-Fh-jYZ" id="1Zp-Of-V2m">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw5-Pe-pPU">
+                                                    <rect key="frame" x="21" y="12" width="374" height="181"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-3z-cgd">
+                                                            <rect key="frame" x="8" y="8" width="358" height="165"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="165" id="9vx-gB-Pta"/>
+                                                                <constraint firstAttribute="width" constant="358" id="PxP-dK-Jb4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-gW-JE9">
+                                                            <rect key="frame" x="8" y="132" width="358" height="41"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="35"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="top" secondItem="Vw5-Pe-pPU" secondAttribute="top" constant="8" id="St5-4h-6qe"/>
+                                                        <constraint firstItem="rzv-3z-cgd" firstAttribute="leading" secondItem="Vw5-Pe-pPU" secondAttribute="leading" constant="8" id="h5T-Ee-oR6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rzv-3z-cgd" secondAttribute="trailing" constant="8" id="j63-B9-GxY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rzv-3z-cgd" secondAttribute="bottom" constant="8" id="pCV-GR-ORn"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="trailing" secondItem="1Zp-Of-V2m" secondAttribute="trailingMargin" constant="1" id="3Sp-OP-oKa"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="bottom" secondItem="1Zp-Of-V2m" secondAttribute="bottomMargin" constant="1" id="T4N-q3-9Aw"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="top" secondItem="1Zp-Of-V2m" secondAttribute="topMargin" constant="1" id="jCL-ja-quV"/>
+                                                <constraint firstItem="Vw5-Pe-pPU" firstAttribute="leading" secondItem="1Zp-Of-V2m" secondAttribute="leadingMargin" constant="1" id="tws-I2-sJH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgGnome" destination="rzv-3z-cgd" id="4J0-XP-6K5"/>
+                                            <outlet property="lbNameGnome" destination="lEk-gW-JE9" id="e3v-W9-Zha"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z3g-m3-7Ln" id="tcD-gb-FIi"/>
+                                    <outlet property="delegate" destination="Z3g-m3-7Ln" id="d8H-ru-UOk"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhb-WT-5om"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="lEf-5w-dPF"/>
+                    <connections>
+                        <outlet property="gnomesTable" destination="0qu-Mm-CdR" id="Hbn-id-mvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jd-O6-mZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="113"/>
+            <point key="canvasLocation" x="688.40579710144937" y="112.5"/>
         </scene>
     </scenes>
     <resources>

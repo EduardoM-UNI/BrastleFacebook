@@ -12,6 +12,7 @@ import UIKit
 protocol HomeViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
+    func presenterPushDataView(receivedData: [Constanst.gnomesCleanData])
 }
 
 protocol HomeWireFrameProtocol: AnyObject {
@@ -30,6 +31,7 @@ protocol HomePresenterProtocol: AnyObject {
 
 protocol HomeInteractorOutputProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
+    func interactorPushDataGnomePresenter(receivedData: [Constanst.gnomesCleanData])
 }
 
 protocol HomeInteractorInputProtocol: AnyObject {
@@ -54,6 +56,7 @@ protocol HomeRemoteDataManagerInputProtocol: AnyObject {
 
 protocol HomeRemoteDataManagerOutputProtocol: AnyObject {
     // REMOTEDATAMANAGER -> INTERACTOR
+    func remoteDataManagerCallBackData (gnomes: [Gnomes])
 }
 
 protocol HomeLocalDataManagerInputProtocol: AnyObject {

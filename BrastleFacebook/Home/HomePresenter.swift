@@ -26,4 +26,9 @@ extension HomePresenter: HomePresenterProtocol {
 
 extension HomePresenter: HomeInteractorOutputProtocol {
     // TODO: implement interactor output methods
+    
+    func interactorPushDataGnomePresenter(receivedData: [Constanst.gnomesCleanData]) {
+        view?.presenterPushDataView(receivedData: receivedData)
+    }
+    
 }
