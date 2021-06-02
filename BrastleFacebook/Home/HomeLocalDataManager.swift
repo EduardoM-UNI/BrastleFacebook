@@ -11,4 +11,7 @@ import Foundation
 class HomeLocalDataManager:HomeLocalDataManagerInputProtocol {
     
     
+    func saveGnomeData(jsonArray: Array<NSDictionary>){
+        
+    }
 }

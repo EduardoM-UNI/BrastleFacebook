@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Z3g-m3-7Ln" kind="show" id="Nbq-Uy-QR5"/>
+                        <segue destination="Z3g-m3-7Ln" kind="relationship" relationship="rootViewController" id="P7k-5c-1Gd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1G-OM-9co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,7 +27,7 @@
         <!--Home View-->
         <scene sceneID="mZc-pn-uhK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Z3g-m3-7Ln" customClass="HomeView" customModule="BrastleFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeView" modalPresentationStyle="fullScreen" id="Z3g-m3-7Ln" customClass="HomeView" customModule="BrastleFacebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WLF-sj-d9m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jd-O6-mZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239.13043478260872" y="112.5"/>
+            <point key="canvasLocation" x="691" y="113"/>
         </scene>
     </scenes>
     <resources>

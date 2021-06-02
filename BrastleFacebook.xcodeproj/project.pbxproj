@@ -25,8 +25,9 @@
 		A0B67A162666DE1900965C17 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A0F2666DE1900965C17 /* HomeView.swift */; };
 		A0B67A172666DE1900965C17 /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */; };
 		A0B67A182666DE1900965C17 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A112666DE1900965C17 /* HomeWireFrame.swift */; };
-		A0B67A1B2666E0D500965C17 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */; };
+		A0B67A1B2666E0D500965C17 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67A1A2666E0D500965C17 /* HomeView.storyboard */; };
 		A0B67A2126677BB500965C17 /* Constanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A2026677BB500965C17 /* Constanst.swift */; };
+		A0B67A242667841400965C17 /* RealmPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A232667841400965C17 /* RealmPopulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,9 @@
 		A0B67A0F2666DE1900965C17 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
 		A0B67A112666DE1900965C17 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
-		A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A0B67A1A2666E0D500965C17 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		A0B67A2026677BB500965C17 /* Constanst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constanst.swift; sourceTree = "<group>"; };
+		A0B67A232667841400965C17 /* RealmPopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPopulation.swift; sourceTree = "<group>"; };
 		C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook.debug.xcconfig"; sourceTree = "<group>"; };
 		EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +159,7 @@
 		A0B679DA2666BEDA00965C17 /* BrastleFacebook */ = {
 			isa = PBXGroup;
 			children = (
-				A0B67A1F26677B9A00965C17 /* Utils */,
+				A0B67A22266783EF00965C17 /* RealmModels */,
 				A0B679DB2666BEDA00965C17 /* AppDelegate.swift */,
 				A0B679DD2666BEDA00965C17 /* SceneDelegate.swift */,
 				A0B679DF2666BEDA00965C17 /* ViewController.swift */,
@@ -165,6 +167,7 @@
 				A0B679E42666BEDB00965C17 /* Assets.xcassets */,
 				A0B679E62666BEDB00965C17 /* LaunchScreen.storyboard */,
 				A0B679E92666BEDB00965C17 /* Info.plist */,
+				A0B67A1F26677B9A00965C17 /* Utils */,
 				A0B67A192666DE2500965C17 /* Home */,
 			);
 			path = BrastleFacebook;
@@ -198,7 +201,7 @@
 				A0B67A0F2666DE1900965C17 /* HomeView.swift */,
 				A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */,
 				A0B67A112666DE1900965C17 /* HomeWireFrame.swift */,
-				A0B67A1A2666E0D500965C17 /* Storyboard.storyboard */,
+				A0B67A1A2666E0D500965C17 /* HomeView.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -209,6 +212,14 @@
 				A0B67A2026677BB500965C17 /* Constanst.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0B67A22266783EF00965C17 /* RealmModels */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67A232667841400965C17 /* RealmPopulation.swift */,
+			);
+			path = RealmModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B679E82666BEDB00965C17 /* LaunchScreen.storyboard in Resources */,
-				A0B67A1B2666E0D500965C17 /* Storyboard.storyboard in Resources */,
+				A0B67A1B2666E0D500965C17 /* HomeView.storyboard in Resources */,
 				A0B679E52666BEDB00965C17 /* Assets.xcassets in Resources */,
 				A0B679E32666BEDA00965C17 /* Main.storyboard in Resources */,
 			);
@@ -458,6 +469,7 @@
 				A0B67A162666DE1900965C17 /* HomeView.swift in Sources */,
 				A0B67A2126677BB500965C17 /* Constanst.swift in Sources */,
 				A0B67A172666DE1900965C17 /* HomeRemoteDataManager.swift in Sources */,
+				A0B67A242667841400965C17 /* RealmPopulation.swift in Sources */,
 				A0B67A122666DE1900965C17 /* HomePresenter.swift in Sources */,
 				A0B67A152666DE1900965C17 /* HomeInteractor.swift in Sources */,
 				A0B67A182666DE1900965C17 /* HomeWireFrame.swift in Sources */,

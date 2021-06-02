@@ -7,7 +7,7 @@ target 'BrastleFacebook' do
 
   # Pods for BrastleFacebook
 
-	pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 4.0'
 	pod 'RealmSwift'
 	pod 'SwiftyJSON', '~> 4.0'
 
