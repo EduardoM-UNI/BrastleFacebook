@@ -25,7 +25,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="es0-Va-ood">
                                 <rect key="frame" x="5" y="59" width="404" height="42"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.094839327037334442" green="0.52204424142837524" blue="0.2331421971321106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Cdu-iE-pQb"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Gj-PS-vrJ">
                                 <rect key="frame" x="35" y="298" width="339" height="5"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.094839327037334442" green="0.52204424142837524" blue="0.2331421971321106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="339" id="nYW-TG-LcO"/>
                                     <constraint firstAttribute="height" constant="5" id="zXL-CJ-rpQ"/>
@@ -43,7 +43,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAJ-2J-9QV">
                                 <rect key="frame" x="35" y="450" width="339" height="5"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.094839327037334442" green="0.52204424142837524" blue="0.2331421971321106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="339" id="H4u-4F-mjd"/>
                                     <constraint firstAttribute="height" constant="5" id="su2-gV-CLC"/>
@@ -51,7 +51,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKa-eW-McY">
                                 <rect key="frame" x="35" y="610" width="339" height="5"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.094839327037334442" green="0.52204424142837524" blue="0.2331421971321106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="DME-Gi-3ZY"/>
                                 </constraints>
@@ -122,7 +122,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.85122805833816528" green="0.93379408121109009" blue="0.7330661416053772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bKa-eW-McY" firstAttribute="top" secondItem="7zg-wv-9cy" secondAttribute="bottom" constant="10" id="5FR-U2-t8M"/>
                             <constraint firstItem="bKa-eW-McY" firstAttribute="trailing" secondItem="YAJ-2J-9QV" secondAttribute="trailing" id="7gR-3X-uWm"/>
@@ -167,9 +167,6 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
