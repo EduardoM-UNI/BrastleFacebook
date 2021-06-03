@@ -13,7 +13,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     
     func interactorSaveLocalData(with gnomes: [GnomesBasicData]) {
       
-   //     localDatamanager?.saveLocaGnomeData(with: gnomes)
+        localDatamanager?.saveLocaGnomeData(with: gnomes)
         
     }
     

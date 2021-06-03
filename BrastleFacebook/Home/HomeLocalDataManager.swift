@@ -19,29 +19,35 @@ class HomeLocalDataManager:HomeLocalDataManagerInputProtocol {
         
         print(Realm.Configuration.defaultConfiguration.fileURL as Any)
         
-        self.realm.delete(self.realm.objects(RealmPopulation.self))
-       
-        
-        var gnomespopulation:Array<RealmPopulation> = []
-        for index in 0...gnomes.count-1 {
-            let realmPopulation = RealmPopulation()
-            realmPopulation.name = (gnomes[index].name ?? "")
-            realmPopulation.age = (gnomes[index].age ?? 0)
-            realmPopulation.height = (gnomes[index].height ?? 0)
-            realmPopulation.weight = (gnomes[index].weight ?? 0)
-            realmPopulation.hair_color = (gnomes[index].hair_color ?? "")
-            realmPopulation.thumbnail = (gnomes[index].thumbnail ?? "")
+        DispatchQueue.main.async { [self] in
             
-//            var friends:Array<Realmfriends> = []
-//            if let friendsGnomes = gnomes[index].friends as? Array<Any>{
-//                if friendsGnomes.count>=1{
-//                    let object = Realmfriends()
-//                    object.friends = friendsGnomes.fr
-//                }
-//            }
-            
-            gnomespopulation.append(realmPopulation)
+            try! self.realm.write{
+                
+                self.realm.delete(self.realm.objects(RealmPopulation.self))
+                
+                
+                var gnomespopulation:Array<RealmPopulation> = []
+                for index in 0...gnomes.count-1 {
+                    let realmPopulation = RealmPopulation()
+                    realmPopulation.name = (gnomes[index].name ?? "")
+                    realmPopulation.age = (gnomes[index].age ?? 0)
+                    realmPopulation.height = (gnomes[index].height ?? 0)
+                    realmPopulation.weight = (gnomes[index].weight ?? 0)
+                    realmPopulation.hair_color = (gnomes[index].hair_color ?? "")
+                    realmPopulation.thumbnail = (gnomes[index].thumbnail ?? "")
+                    
+                    //            var friends:Array<Realmfriends> = []
+                    //            if let friendsGnomes = gnomes[index].friends as? Array<Any>{
+                    //                if friendsGnomes.count>=1{
+                    //                    let object = Realmfriends()
+                    //                    object.friends = friendsGnomes.fr
+                    //                }
+                    //            }
+                    
+                    gnomespopulation.append(realmPopulation)
+                }
+                self.realm.add(gnomespopulation, update: Realm.UpdatePolicy.modified)
+            }
         }
-        self.realm.add(gnomespopulation, update: Realm.UpdatePolicy.modified)
     }
 }
