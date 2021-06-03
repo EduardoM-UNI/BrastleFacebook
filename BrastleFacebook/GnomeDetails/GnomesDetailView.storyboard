@@ -163,9 +163,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zg-wv-9cy">
                                 <rect key="frame" x="43" y="470" width="322" height="130"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Professions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-R0-P1F">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-R0-P1F">
                                         <rect key="frame" x="8" y="8" width="314" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="eTi-Ir-GUR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbProfessions" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fMQ-x6-e8M">
+                                        <rect key="frame" x="13" y="31" width="297" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="31r-eA-Sa5"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -173,8 +184,14 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="fMQ-x6-e8M" firstAttribute="top" secondItem="2HZ-R0-P1F" secondAttribute="bottom" constant="-15" id="6oT-Cg-xaa"/>
                                     <constraint firstAttribute="height" constant="130" id="BiD-ho-8uk"/>
+                                    <constraint firstItem="2HZ-R0-P1F" firstAttribute="leading" secondItem="7zg-wv-9cy" secondAttribute="leading" constant="8" id="Nu9-5F-QN4"/>
                                     <constraint firstAttribute="width" constant="322" id="PGS-wu-BAR"/>
+                                    <constraint firstItem="2HZ-R0-P1F" firstAttribute="top" secondItem="7zg-wv-9cy" secondAttribute="top" constant="8" id="aPp-Kn-VT1"/>
+                                    <constraint firstAttribute="trailing" secondItem="2HZ-R0-P1F" secondAttribute="trailing" id="hEa-xz-bkO"/>
+                                    <constraint firstItem="fMQ-x6-e8M" firstAttribute="leading" secondItem="7zg-wv-9cy" secondAttribute="leading" constant="13" id="mIr-Df-HwT"/>
+                                    <constraint firstAttribute="trailing" secondItem="fMQ-x6-e8M" secondAttribute="trailing" constant="12" id="qec-11-QjV"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j80-q0-Bmj">
@@ -246,6 +263,7 @@
                         <outlet property="lbGnomeHeight" destination="eJ9-0Z-HNO" id="L3a-ey-W3D"/>
                         <outlet property="lbGnomeName" destination="es0-Va-ood" id="6xC-Jw-zcD"/>
                         <outlet property="lbGnomeWeight" destination="2M2-ox-tqh" id="Y2E-gn-xHp"/>
+                        <outlet property="lbProfessions" destination="fMQ-x6-e8M" id="rbG-1i-49A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

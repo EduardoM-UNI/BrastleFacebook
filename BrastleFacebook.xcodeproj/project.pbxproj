@@ -218,6 +218,7 @@
 		A0B67A192666DE2500965C17 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A0B67A1A2666E0D500965C17 /* HomeView.storyboard */,
 				A0B67A0B2666DE1900965C17 /* HomePresenter.swift */,
 				A0B67A0C2666DE1900965C17 /* HomeLocalDataManager.swift */,
 				A0B67A0D2666DE1900965C17 /* HomeProtocols.swift */,
@@ -225,7 +226,6 @@
 				A0B67A0F2666DE1900965C17 /* HomeView.swift */,
 				A0B67A102666DE1900965C17 /* HomeRemoteDataManager.swift */,
 				A0B67A112666DE1900965C17 /* HomeWireFrame.swift */,
-				A0B67A1A2666E0D500965C17 /* HomeView.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";

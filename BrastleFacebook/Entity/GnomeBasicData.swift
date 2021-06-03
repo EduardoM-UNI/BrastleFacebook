@@ -15,5 +15,7 @@ struct GnomesBasicData {
     var weight: Int?
     var hair_color: String?
     var thumbnail: String?
+    var friends = [String]()
+    var professions = [String]()
     
 }

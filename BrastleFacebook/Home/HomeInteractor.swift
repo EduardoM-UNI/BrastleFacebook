@@ -30,7 +30,7 @@ extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
         
         for index in 0...gnomes.count-1{
         
-            let gnome = GnomesBasicData(name: gnomes[index].name, age: gnomes[index].age, height: gnomes[index].height, weight: gnomes[index].weight, hair_color: gnomes[index].hair_color, thumbnail: gnomes[index].thumbnail)
+            let gnome = GnomesBasicData(name: gnomes[index].name, age: gnomes[index].age, height: gnomes[index].height, weight: gnomes[index].weight, hair_color: gnomes[index].hair_color, thumbnail: gnomes[index].thumbnail,friends: gnomes[index].friends,professions: gnomes[index].professions)
             self.arrayGnomes.append(gnome)
             
         }

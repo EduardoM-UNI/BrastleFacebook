@@ -12,6 +12,7 @@ import SDWebImage
 
 class GnomesDetailView: UIViewController {
 
+    @IBOutlet weak var lbProfessions: UILabel!
     @IBOutlet weak var lbGnomeHair: UILabel!
     @IBOutlet weak var lbGnomeHeight: UILabel!
     @IBOutlet weak var lbGnomeWeight: UILabel!
@@ -40,6 +41,8 @@ extension GnomesDetailView: GnomesDetailViewProtocol {
         lbGnomeAge.text = "\(data.age ?? 0)"
         lbGnomeName.text = data.name
         imgGnome.sd_setImage(with: URL(string:data.thumbnail!), completed: nil)
+        lbProfessions.text = data.professions.joined(separator: ", ")
+       
     }
     
 }
