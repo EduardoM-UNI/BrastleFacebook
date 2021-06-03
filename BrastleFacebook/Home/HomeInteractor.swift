@@ -9,6 +9,14 @@
 import Foundation
 
 class HomeInteractor: HomeInteractorInputProtocol {
+    
+    
+    func interactorSaveLocalData(with gnomes: [GnomesBasicData]) {
+      
+   //     localDatamanager?.saveLocaGnomeData(with: gnomes)
+        
+    }
+    
 
     // MARK: Properties
     weak var presenter: HomeInteractorOutputProtocol?

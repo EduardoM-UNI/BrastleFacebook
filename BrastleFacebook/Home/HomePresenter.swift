@@ -37,6 +37,8 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     func interactorPushDataGnomePresenter(receivedData: [GnomesBasicData]) {
         view?.StopSpinner()
         view?.presenterPushDataView(receivedData: receivedData)
+        //Save data from Api to Local db using RealmDB
+        interactor?.interactorSaveLocalData(with: receivedData)
     }
     
 }

@@ -39,6 +39,8 @@
 		A0B67A372667D6EC00965C17 /* GnomesDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A302667D6EC00965C17 /* GnomesDetailWireFrame.swift */; };
 		A0B67A3A26683D8000965C17 /* GnomesDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67A3926683D8000965C17 /* GnomesDetailView.storyboard */; };
 		A0EA14EE2668ECF3008E5C26 /* GnomeBasicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA14ED2668ECF3008E5C26 /* GnomeBasicData.swift */; };
+		A0EA14F0266935AB008E5C26 /* GnomesFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA14EF266935AB008E5C26 /* GnomesFriendsTableViewCell.swift */; };
+		A0EA14F226693D1A008E5C26 /* NetWorkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA14F126693D1A008E5C26 /* NetWorkConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		A0B67A302667D6EC00965C17 /* GnomesDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailWireFrame.swift; sourceTree = "<group>"; };
 		A0B67A3926683D8000965C17 /* GnomesDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GnomesDetailView.storyboard; sourceTree = "<group>"; };
 		A0EA14ED2668ECF3008E5C26 /* GnomeBasicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeBasicData.swift; sourceTree = "<group>"; };
+		A0EA14EF266935AB008E5C26 /* GnomesFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		A0EA14F126693D1A008E5C26 /* NetWorkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkConnection.swift; sourceTree = "<group>"; };
 		C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook.debug.xcconfig"; sourceTree = "<group>"; };
 		EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +239,8 @@
 			children = (
 				A0B67A2026677BB500965C17 /* Constanst.swift */,
 				A0B67A2526679BA800965C17 /* GnomesTableViewCell.swift */,
+				A0EA14EF266935AB008E5C26 /* GnomesFriendsTableViewCell.swift */,
+				A0EA14F126693D1A008E5C26 /* NetWorkConnection.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				A0B67A162666DE1900965C17 /* HomeView.swift in Sources */,
 				A0B67A2126677BB500965C17 /* Constanst.swift in Sources */,
 				A0B67A172666DE1900965C17 /* HomeRemoteDataManager.swift in Sources */,
+				A0EA14F0266935AB008E5C26 /* GnomesFriendsTableViewCell.swift in Sources */,
 				A0B67A282667A0BE00965C17 /* Gnomes.swift in Sources */,
 				A0B67A332667D6EC00965C17 /* GnomesDetailProtocols.swift in Sources */,
 				A0B67A2626679BA800965C17 /* GnomesTableViewCell.swift in Sources */,
@@ -530,6 +537,7 @@
 				A0B67A342667D6EC00965C17 /* GnomesDetailInteractor.swift in Sources */,
 				A0B67A372667D6EC00965C17 /* GnomesDetailWireFrame.swift in Sources */,
 				A0B67A322667D6EC00965C17 /* GnomesDetailLocalDataManager.swift in Sources */,
+				A0EA14F226693D1A008E5C26 /* NetWorkConnection.swift in Sources */,
 				A0B67A152666DE1900965C17 /* HomeInteractor.swift in Sources */,
 				A0B67A182666DE1900965C17 /* HomeWireFrame.swift in Sources */,
 				A0B67A362667D6EC00965C17 /* GnomesDetailRemoteDataManager.swift in Sources */,

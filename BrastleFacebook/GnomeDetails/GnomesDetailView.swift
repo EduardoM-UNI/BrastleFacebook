@@ -45,4 +45,15 @@ extension GnomesDetailView: GnomesDetailViewProtocol {
        
     }
     
+
+func addShadow(container : UIView){
+    container.layer.cornerRadius = 10
+    container.layer.masksToBounds = true
+    container.layer.shadowColor = UIColor.gray.cgColor
+    container.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+    container.layer.shadowOpacity = 0.4
+    container.layer.shadowRadius = 8.0
+    container.layer.masksToBounds = false
+    
+}
 }

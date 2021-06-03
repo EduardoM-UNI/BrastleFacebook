@@ -45,6 +45,7 @@ protocol HomeInteractorInputProtocol: AnyObject {
     var remoteDatamanager: HomeRemoteDataManagerInputProtocol? { get set }
     
     func interactorGetData()
+    func interactorSaveLocalData(with gnomes: [GnomesBasicData])
 }
 
 protocol HomeDataManagerInputProtocol: AnyObject {
@@ -65,4 +66,5 @@ protocol HomeRemoteDataManagerOutputProtocol: AnyObject {
 
 protocol HomeLocalDataManagerInputProtocol: AnyObject {
     // INTERACTOR -> LOCALDATAMANAGER
+    func saveLocaGnomeData(with gnomes: [GnomesBasicData])
 }
