@@ -76,7 +76,12 @@ extension HomeView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        presenter?.showGnomeDetailVIew(with: GnomesBasicData(name: arrayViewGnomes[indexPath.row].name, thumbnail: arrayViewGnomes[indexPath.row].thumbnail!))
+        presenter?.showGnomeDetailVIew(with: GnomesBasicData(
+                        name: arrayViewGnomes[indexPath.row].name,
+                                        age: arrayViewGnomes[indexPath.row].age,
+                                        height: arrayViewGnomes[indexPath.row].height,
+                                        weight:arrayViewGnomes[indexPath.row].weight,
+                                        hair_color: arrayViewGnomes[indexPath.row].hair_color,thumbnail: arrayViewGnomes[indexPath.row].thumbnail!))
         
         
     }

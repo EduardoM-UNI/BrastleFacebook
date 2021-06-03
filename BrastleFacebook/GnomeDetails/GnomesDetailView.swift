@@ -12,6 +12,10 @@ import SDWebImage
 
 class GnomesDetailView: UIViewController {
 
+    @IBOutlet weak var lbGnomeHair: UILabel!
+    @IBOutlet weak var lbGnomeHeight: UILabel!
+    @IBOutlet weak var lbGnomeWeight: UILabel!
+    @IBOutlet weak var lbGnomeAge: UILabel!
     @IBOutlet weak var lbGnomeName: UILabel!
     @IBOutlet weak var imgGnome: UIImageView!
     // MARK: Properties
@@ -29,6 +33,11 @@ extension GnomesDetailView: GnomesDetailViewProtocol {
     // TODO: implement view output methods
     
     func showGnomeData(data: GnomesBasicData) {
+       
+        lbGnomeHair.text = data.hair_color
+        lbGnomeHeight.text = "\(data.height ?? 0)"
+        lbGnomeWeight.text = "\(data.weight ?? 0)"
+        lbGnomeAge.text = "\(data.age ?? 0)"
         lbGnomeName.text = data.name
         imgGnome.sd_setImage(with: URL(string:data.thumbnail!), completed: nil)
     }
