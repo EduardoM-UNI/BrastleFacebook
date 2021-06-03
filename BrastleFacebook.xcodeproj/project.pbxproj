@@ -37,6 +37,7 @@
 		A0B67A352667D6EC00965C17 /* GnomesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A2E2667D6EC00965C17 /* GnomesDetailView.swift */; };
 		A0B67A362667D6EC00965C17 /* GnomesDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A2F2667D6EC00965C17 /* GnomesDetailRemoteDataManager.swift */; };
 		A0B67A372667D6EC00965C17 /* GnomesDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B67A302667D6EC00965C17 /* GnomesDetailWireFrame.swift */; };
+		A0B67A3A26683D8000965C17 /* GnomesDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67A3926683D8000965C17 /* GnomesDetailView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		A0B67A2E2667D6EC00965C17 /* GnomesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailView.swift; sourceTree = "<group>"; };
 		A0B67A2F2667D6EC00965C17 /* GnomesDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailRemoteDataManager.swift; sourceTree = "<group>"; };
 		A0B67A302667D6EC00965C17 /* GnomesDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailWireFrame.swift; sourceTree = "<group>"; };
+		A0B67A3926683D8000965C17 /* GnomesDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GnomesDetailView.storyboard; sourceTree = "<group>"; };
 		C1C3D59510F608B28B3CC4C0 /* Pods-BrastleFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastleFacebook.debug.xcconfig"; path = "Target Support Files/Pods-BrastleFacebook/Pods-BrastleFacebook.debug.xcconfig"; sourceTree = "<group>"; };
 		EC922B95B56D9B0F00C8B775 /* Pods_BrastleFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA812E969F68DABA1CE7E9A /* Pods_BrastleFacebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastleFacebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 		A0B67A382667D6F600965C17 /* GnomeDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A0B67A3926683D8000965C17 /* GnomesDetailView.storyboard */,
 				A0B67A2A2667D6EC00965C17 /* GnomesDetailPresenter.swift */,
 				A0B67A2B2667D6EC00965C17 /* GnomesDetailLocalDataManager.swift */,
 				A0B67A2C2667D6EC00965C17 /* GnomesDetailProtocols.swift */,
@@ -376,6 +379,7 @@
 				A0B679E82666BEDB00965C17 /* LaunchScreen.storyboard in Resources */,
 				A0B67A1B2666E0D500965C17 /* HomeView.storyboard in Resources */,
 				A0B679E52666BEDB00965C17 /* Assets.xcassets in Resources */,
+				A0B67A3A26683D8000965C17 /* GnomesDetailView.storyboard in Resources */,
 				A0B679E32666BEDA00965C17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

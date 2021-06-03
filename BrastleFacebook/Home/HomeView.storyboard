@@ -98,24 +98,31 @@
                                     <outlet property="delegate" destination="Z3g-m3-7Ln" id="d8H-ru-UOk"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qjd-Ex-J6a">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhb-WT-5om"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
+                            <constraint firstItem="qjd-Ex-J6a" firstAttribute="centerX" secondItem="WLF-sj-d9m" secondAttribute="centerX" id="22R-dl-8cR"/>
                             <constraint firstItem="0qu-Mm-CdR" firstAttribute="leading" secondItem="uhb-WT-5om" secondAttribute="leading" id="67s-4B-7ea"/>
                             <constraint firstItem="0qu-Mm-CdR" firstAttribute="bottom" secondItem="uhb-WT-5om" secondAttribute="bottom" constant="34" id="7Be-8C-8YZ"/>
                             <constraint firstItem="0qu-Mm-CdR" firstAttribute="centerX" secondItem="WLF-sj-d9m" secondAttribute="centerX" id="miF-lE-lKV"/>
+                            <constraint firstItem="qjd-Ex-J6a" firstAttribute="centerY" secondItem="WLF-sj-d9m" secondAttribute="centerY" id="r49-Wr-YL6"/>
                             <constraint firstItem="0qu-Mm-CdR" firstAttribute="top" secondItem="WLF-sj-d9m" secondAttribute="topMargin" constant="-44" id="urg-jI-DFK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="BrastleFacebook" id="lEf-5w-dPF"/>
                     <connections>
                         <outlet property="gnomesTable" destination="0qu-Mm-CdR" id="Hbn-id-mvA"/>
+                        <outlet property="spinnerIndicator" destination="qjd-Ex-J6a" id="eGX-iF-4DH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jd-O6-mZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688.40579710144937" y="112.5"/>
+            <point key="canvasLocation" x="462" y="113"/>
         </scene>
     </scenes>
     <resources>

@@ -13,6 +13,7 @@ import SDWebImage
 class HomeView: UIViewController {
   
 
+    @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
     @IBOutlet weak var gnomesTable: UITableView!
     // MARK: Properties
     var presenter: HomePresenterProtocol?
@@ -26,14 +27,33 @@ class HomeView: UIViewController {
 }
 
 extension HomeView: HomeViewProtocol {
+    
 
     // TODO: implement view output methods
     
     func presenterPushDataView(receivedData: [Constanst.gnomesCleanData]) {
         
         arrayViewGnomes = receivedData
-        gnomesTable.reloadData()
+        DispatchQueue.main.async { [self] in
+            gnomesTable.reloadData()
+        }
+       
     }
+    
+    func showSpinner() {
+        DispatchQueue.main.async {
+            self.spinnerIndicator.startAnimating()
+        }
+        
+    }
+    
+    func StopSpinner() {
+        DispatchQueue.main.async {
+            self.spinnerIndicator.stopAnimating()
+            self.spinnerIndicator.hidesWhenStopped = true
+        }
+    }
+    
 }
 
 extension HomeView: UITableViewDataSource, UITableViewDelegate {
@@ -49,10 +69,16 @@ extension HomeView: UITableViewDataSource, UITableViewDelegate {
         addShadow(container: cell.viewBackground)
         cell.lbNameGnome.text = arrayViewGnomes[indexPath.row].name
         cell.imgGnome.sd_setImage(with: URL(string:arrayViewGnomes[indexPath.row].thumbnail!), completed: nil)
-        
-//        profileImage.sd_setImage(with: URL(string: gnome.thumbnailURL), completed: nil)
-        
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        presenter?.showGnomeDetailVIew(with: Constanst.gnomesCleanData(name: arrayViewGnomes[indexPath.row].name, thumbnail: arrayViewGnomes[indexPath.row].thumbnail!))
+        
+        
     }
     
     func addShadow(container : UIView){

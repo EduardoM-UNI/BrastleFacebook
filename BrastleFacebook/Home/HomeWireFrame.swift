@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class HomeWireFrame: HomeWireFrameProtocol {
+    
+    
 
     class func createHomeModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "navigator")
@@ -38,4 +40,14 @@ class HomeWireFrame: HomeWireFrameProtocol {
         return UIStoryboard(name: "HomeView", bundle: Bundle.main)
     }
     
+    func presentNewViewDetail(from view: HomeViewProtocol, withData: Constanst.gnomesCleanData) {
+        
+        let newDetailView = GnomesDetailWireFrame.createGnomesDetailModule(with: withData)
+        
+        if let newView = view as? UIViewController{
+        newView.navigationController?.pushViewController(newDetailView, animated: true)
+        }
+        
+        
+    }
 }

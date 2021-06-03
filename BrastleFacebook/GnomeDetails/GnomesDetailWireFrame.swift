@@ -11,9 +11,9 @@ import UIKit
 
 class GnomesDetailWireFrame: GnomesDetailWireFrameProtocol {
 
-    class func createGnomesDetailModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "GnomesDetailView")
-        if let view = navController.children.first as? GnomesDetailView {
+static func createGnomesDetailModule(with data: Constanst.gnomesCleanData) -> UIViewController {
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "gnomesDetailView")
+        if let view = viewController as? GnomesDetailView {
             let presenter: GnomesDetailPresenterProtocol & GnomesDetailInteractorOutputProtocol = GnomesDetailPresenter()
             let interactor: GnomesDetailInteractorInputProtocol & GnomesDetailRemoteDataManagerOutputProtocol = GnomesDetailInteractor()
             let localDataManager: GnomesDetailLocalDataManagerInputProtocol = GnomesDetailLocalDataManager()
@@ -24,12 +24,13 @@ class GnomesDetailWireFrame: GnomesDetailWireFrameProtocol {
             presenter.view = view
             presenter.wireFrame = wireFrame
             presenter.interactor = interactor
+            presenter.gnomesDataReceived = data
             interactor.presenter = presenter
             interactor.localDatamanager = localDataManager
             interactor.remoteDatamanager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
-            return navController
+            return viewController
         }
         return UIViewController()
     }
