@@ -14,7 +14,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     weak var presenter: HomeInteractorOutputProtocol?
     var localDatamanager: HomeLocalDataManagerInputProtocol?
     var remoteDatamanager: HomeRemoteDataManagerInputProtocol?
-    var arrayGnomes = [Constanst.gnomesCleanData]()
+    var arrayGnomes = [GnomesBasicData]()
     func interactorGetData() {
        
         remoteDatamanager?.externalGetPoblationGnomes()
@@ -30,7 +30,7 @@ extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
         
         for index in 0...gnomes.count-1{
         
-            let gnome = Constanst.gnomesCleanData(name: gnomes[index].name, age: gnomes[index].age, height: gnomes[index].height, weight: gnomes[index].weight, hair_color: gnomes[index].hair_color, thumbnail: gnomes[index].thumbnail)
+            let gnome = GnomesBasicData(name: gnomes[index].name, age: gnomes[index].age, height: gnomes[index].height, weight: gnomes[index].weight, hair_color: gnomes[index].hair_color, thumbnail: gnomes[index].thumbnail)
             self.arrayGnomes.append(gnome)
             
         }

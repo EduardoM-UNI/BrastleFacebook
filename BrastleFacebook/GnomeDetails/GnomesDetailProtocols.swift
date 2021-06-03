@@ -12,12 +12,12 @@ import UIKit
 protocol GnomesDetailViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: GnomesDetailPresenterProtocol? { get set }
-    func showGnomeData(data: Constanst.gnomesCleanData)
+    func showGnomeData(data: GnomesBasicData)
 }
 
 protocol GnomesDetailWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
-    static func createGnomesDetailModule(with data: Constanst.gnomesCleanData) -> UIViewController
+    static func createGnomesDetailModule(with data: GnomesBasicData) -> UIViewController
 }
 
 protocol GnomesDetailPresenterProtocol: AnyObject {
@@ -25,7 +25,7 @@ protocol GnomesDetailPresenterProtocol: AnyObject {
     var view: GnomesDetailViewProtocol? { get set }
     var interactor: GnomesDetailInteractorInputProtocol? { get set }
     var wireFrame: GnomesDetailWireFrameProtocol? { get set }
-    var gnomesDataReceived: Constanst.gnomesCleanData? {get set}
+    var gnomesDataReceived: GnomesBasicData? {get set}
     func viewDidLoad()
 }
 

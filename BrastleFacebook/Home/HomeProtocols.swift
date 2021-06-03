@@ -12,7 +12,7 @@ import UIKit
 protocol HomeViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
-    func presenterPushDataView(receivedData: [Constanst.gnomesCleanData])
+    func presenterPushDataView(receivedData: [GnomesBasicData])
     func showSpinner()
     func StopSpinner()
 }
@@ -20,7 +20,7 @@ protocol HomeViewProtocol: AnyObject {
 protocol HomeWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
     static func createHomeModule() -> UIViewController
-    func presentNewViewDetail(from view:HomeViewProtocol, withData:Constanst.gnomesCleanData)
+    func presentNewViewDetail(from view:HomeViewProtocol, withData:GnomesBasicData)
 }
 
 protocol HomePresenterProtocol: AnyObject {
@@ -28,14 +28,14 @@ protocol HomePresenterProtocol: AnyObject {
     var view: HomeViewProtocol? { get set }
     var interactor: HomeInteractorInputProtocol? { get set }
     var wireFrame: HomeWireFrameProtocol? { get set }
-    func showGnomeDetailVIew(with data: Constanst.gnomesCleanData)
+    func showGnomeDetailVIew(with data: GnomesBasicData)
     
     func viewDidLoad()
 }
 
 protocol HomeInteractorOutputProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
-    func interactorPushDataGnomePresenter(receivedData: [Constanst.gnomesCleanData])
+    func interactorPushDataGnomePresenter(receivedData: [GnomesBasicData])
 }
 
 protocol HomeInteractorInputProtocol: AnyObject {

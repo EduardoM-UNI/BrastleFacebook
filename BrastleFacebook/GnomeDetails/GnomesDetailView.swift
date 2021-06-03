@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class GnomesDetailView: UIViewController {
 
@@ -27,8 +28,9 @@ class GnomesDetailView: UIViewController {
 extension GnomesDetailView: GnomesDetailViewProtocol {
     // TODO: implement view output methods
     
-    func showGnomeData(data: Constanst.gnomesCleanData) {
+    func showGnomeData(data: GnomesBasicData) {
         lbGnomeName.text = data.name
+        imgGnome.sd_setImage(with: URL(string:data.thumbnail!), completed: nil)
     }
     
 }

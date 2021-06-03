@@ -40,7 +40,7 @@ class HomeWireFrame: HomeWireFrameProtocol {
         return UIStoryboard(name: "HomeView", bundle: Bundle.main)
     }
     
-    func presentNewViewDetail(from view: HomeViewProtocol, withData: Constanst.gnomesCleanData) {
+    func presentNewViewDetail(from view: HomeViewProtocol, withData: GnomesBasicData) {
         
         let newDetailView = GnomesDetailWireFrame.createGnomesDetailModule(with: withData)
         

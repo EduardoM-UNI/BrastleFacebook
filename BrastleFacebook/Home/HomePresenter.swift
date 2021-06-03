@@ -24,7 +24,7 @@ extension HomePresenter: HomePresenterProtocol {
         view?.showSpinner()
     }
     
-    func showGnomeDetailVIew(with data: Constanst.gnomesCleanData) {
+    func showGnomeDetailVIew(with data: GnomesBasicData) {
         
         wireFrame?.presentNewViewDetail(from: view!, withData: data)
     }
@@ -34,7 +34,7 @@ extension HomePresenter: HomePresenterProtocol {
 extension HomePresenter: HomeInteractorOutputProtocol {
     // TODO: implement interactor output methods
     
-    func interactorPushDataGnomePresenter(receivedData: [Constanst.gnomesCleanData]) {
+    func interactorPushDataGnomePresenter(receivedData: [GnomesBasicData]) {
         view?.StopSpinner()
         view?.presenterPushDataView(receivedData: receivedData)
     }

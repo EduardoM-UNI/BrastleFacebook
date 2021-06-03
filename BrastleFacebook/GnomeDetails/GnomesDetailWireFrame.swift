@@ -11,7 +11,7 @@ import UIKit
 
 class GnomesDetailWireFrame: GnomesDetailWireFrameProtocol {
 
-static func createGnomesDetailModule(with data: Constanst.gnomesCleanData) -> UIViewController {
+static func createGnomesDetailModule(with data: GnomesBasicData) -> UIViewController {
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "gnomesDetailView")
         if let view = viewController as? GnomesDetailView {
             let presenter: GnomesDetailPresenterProtocol & GnomesDetailInteractorOutputProtocol = GnomesDetailPresenter()

@@ -17,7 +17,7 @@ class HomeView: UIViewController {
     @IBOutlet weak var gnomesTable: UITableView!
     // MARK: Properties
     var presenter: HomePresenterProtocol?
-    var arrayViewGnomes = [Constanst.gnomesCleanData]()
+    var arrayViewGnomes = [GnomesBasicData]()
     // MARK: Lifecycle
 
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ extension HomeView: HomeViewProtocol {
 
     // TODO: implement view output methods
     
-    func presenterPushDataView(receivedData: [Constanst.gnomesCleanData]) {
+    func presenterPushDataView(receivedData: [GnomesBasicData]) {
         
         arrayViewGnomes = receivedData
         DispatchQueue.main.async { [self] in
@@ -76,7 +76,7 @@ extension HomeView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        presenter?.showGnomeDetailVIew(with: Constanst.gnomesCleanData(name: arrayViewGnomes[indexPath.row].name, thumbnail: arrayViewGnomes[indexPath.row].thumbnail!))
+        presenter?.showGnomeDetailVIew(with: GnomesBasicData(name: arrayViewGnomes[indexPath.row].name, thumbnail: arrayViewGnomes[indexPath.row].thumbnail!))
         
         
     }

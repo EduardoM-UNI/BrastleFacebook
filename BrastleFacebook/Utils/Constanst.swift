@@ -13,15 +13,4 @@ public struct Constanst{
         static let url = "raw.githubusercontent.com"
         static let path = "rrafols/mobile_test/master/data.json"
     }
-    
-    struct gnomesCleanData {
-       
-        var name: String?
-        var age: Int?
-        var height: Int?
-        var weight: Int?
-        var hair_color: String?
-        var thumbnail: String?
-        
-    }
 }

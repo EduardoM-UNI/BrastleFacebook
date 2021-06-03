@@ -14,7 +14,7 @@ class GnomesDetailPresenter  {
     weak var view: GnomesDetailViewProtocol?
     var interactor: GnomesDetailInteractorInputProtocol?
     var wireFrame: GnomesDetailWireFrameProtocol?
-    var gnomesDataReceived: Constanst.gnomesCleanData? 
+    var gnomesDataReceived: GnomesBasicData? 
     
 }
 
@@ -22,8 +22,7 @@ extension GnomesDetailPresenter: GnomesDetailPresenterProtocol {
 
     // TODO: implement presenter methods
     func viewDidLoad() {
-        print ("Dato Seleccionado \(gnomesDataReceived?.name ?? "")")
-        
+      
         if let gnomeDataRecived = gnomesDataReceived{
             view?.showGnomeData(data: gnomeDataRecived)
         }
